@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UFC Maps</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="header">
     <h1 class="logo">UFC Maps</h1>
@@ -16,6 +18,9 @@
       <option value="sala3">Sala 3</option>
       <option value="sala4">Sala 4</option>
     </select>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar local..." />
+    </div>
     <button id="fullscreenBtn">⛶</button>
   </header>
 
@@ -31,12 +36,13 @@
         <img src="" class="sala hidden">
       </div>
       <div class="map-controls">
-        <button>+</button>
-        <button>-</button>
+        <button id="zoominBtn">+</button>
+        <button id="zoomoutBtn">-</button>
       </div>
-      
+
     </section>
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
