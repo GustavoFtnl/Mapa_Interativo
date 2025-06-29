@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UFC Maps</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">UFC Maps</h1>
+    <select id="locationSelect">
+      <option value="">Locais</option>
+      <option value="sala1">Sala 1</option>
+      <option value="sala2">Sala 2</option>
+      <option value="sala3">Sala 3</option>
+      <option value="sala4">Sala 4</option>
+    </select>
+    <button id="fullscreenBtn">⛶</button>
+  </header>
+
+  <main class="container">
+    <aside id="infoPanel" class="info hidden">
+      <h2>Campus Map</h2>
+      <p>The map displays the university campus with markers for buildings, facilities, and points of interest.</p>
+    </aside>
+
+    <section class="map">
+      <div class="mock-map">
+        <img src="./imagem/PlantaV3.svg" class="planta">
+        <img src="" class="sala hidden">
+      </div>
+      <div class="map-controls">
+        <button>+</button>
+        <button>-</button>
+      </div>
+      
+    </section>
+  </main>
+
+  <!-- <script>
+    const select = document.getElementById('locationSelect');
+    const infoPanel = document.getElementById('infoPanel');
+
+    select.addEventListener('change', () => {
+      if (select.value) {
+        infoPanel.classList.remove('hidden');
+      } else {
+        infoPanel.classList.add('hidden');
+      }
+    });
+  </script> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
