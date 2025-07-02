@@ -32,8 +32,22 @@
 
   <main class="container">
     <aside id="infoPanel" class="info hidden">
-      <h2>Campus Map</h2>
-      <p>The map displays the university campus with markers for buildings, facilities, and points of interest.</p>
+      <h2 id="nomeLocal">Campus Map</h2>
+      <section>
+        <div>
+          <select id="diasDaSemana">
+          <option>Dia da Semana</option>
+          <option value="segunda">Segunda-Feira</option>
+          <option value='terca'>Terça-Feira</option>
+          <option value='quarta'>Quarta-Feira</option>
+          <option value='quinta'>Quinta-Feira</option>
+          <option value='sexta'>Sexta-Feira</option>
+        </select>
+        </div>
+        <div>
+          <ul id="listaDeInformacoes"></ul>
+        </div>
+      </section>
     </aside>
 
     <section class="map">
@@ -48,6 +62,7 @@
     </section>
   </main>
   <script src="script.js"></script>
+  <script src="scriptSala.js"></script>
 </body>
 
 </html>

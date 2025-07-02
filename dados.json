@@ -1,0 +1,99 @@
+{
+  "sala1": {
+    "segunda": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Eletrônica de Potência 2",
+        "professor": "Marcus Rogerio"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Princípios de Comunicação",
+        "professor": "Yuti Victor"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Arquitetura e Organização de Computadores",
+        "professor": "Wendley Silva"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Algoritmos em Grafo",
+        "professor": "Antonio Josefran"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Circuitos Elétricos 1",
+        "professor": "Carlos Elmano"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Eletrônica Digital",
+        "professor": "Davi Coelho"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Transmissão de Energia Elétrica",
+        "professor": "Erasmo de Castro"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Algoritmos em Grafo",
+        "professor": "Antonio Josefran"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Eletrônica de Potência 2",
+        "professor": "Marcus Rogerio"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Princípios de Comunicação",
+        "professor": "Yuri Victor"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Arquitetura e Organização de Computadores",
+        "professor": "Wendley Silva"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Química Geral",
+        "professor": "Cibelly Azevedo"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Circuitos Elétricos 1",
+        "professor": "Carlos Elmano"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Eletrônica Digital",
+        "professor": "Davi Coelho"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Transmissão de Energia Elétrica",
+        "professor": "Erasmo de Castro"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Seminário de Telecomunicações 1",
+        "professor": "Marcelo Marques"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Química Geral",
+        "professor": "Cibelly Azevedo"
+      }
+    ]
+  }
+}

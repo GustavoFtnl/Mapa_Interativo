@@ -6,15 +6,18 @@ const fullscreenBtn = document.getElementById('fullscreenBtn');
 const wrapper = document.querySelector('.mock-map');
 const zoominBtn = document.getElementById('zoominBtn');
 const zoomouBtn = document.getElementById('zoomoutBtn');
+const nomeLocal = document.getElementById('nomeLocal');
 
 const minScale = 0.8; 
 let scale = 1;
 const scaleStep = 0.2;
 const maxScale = 2.5;
 
-
+window.globalSala = '';
 selectSala.addEventListener('change', () => {
     const nomeSala = selectSala.value;
+    window.globalSala = selectSala.value;
+    nomeLocal.textContent = nomeSala.toUpperCase();
     console.log(nomeSala);
 
     if (imagemSala) {
@@ -28,6 +31,21 @@ selectSala.addEventListener('change', () => {
     } else {
         imagemSala.classList.add('hidden');
         informacoesPainel.classList.add('hidden');
+    }
+    
+    const diaSelecionado = diaDaSemanaSelect.value;
+    if (diaSelecionado && diaSelecionado !== 'Dia') {
+      // Se já tem dia, carrega os dados de novo
+      carregarDados().then((dados) => {
+        if (dados[globalSala] && dados[globalSala][diaSelecionado]) {
+          adicionarInformacaoDaSala(dados[globalSala], diaSelecionado);
+        } else {
+          ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
+        }
+      }).catch((err) => {
+        console.error('Erro ao carregar dados:', err);
+        ulLista.innerHTML = '<li>Erro ao carregar dados</li>';
+      });
     }
 })
 
