@@ -8,45 +8,45 @@ const zoominBtn = document.getElementById('zoominBtn');
 const zoomouBtn = document.getElementById('zoomoutBtn');
 const nomeLocal = document.getElementById('nomeLocal');
 
-const minScale = 0.8; 
+const minScale = 0.8;
 let scale = 1;
 const scaleStep = 0.2;
 const maxScale = 2.5;
 
 window.globalSala = '';
 selectSala.addEventListener('change', () => {
-    const nomeSala = selectSala.value;
-    window.globalSala = selectSala.value;
-    nomeLocal.textContent = nomeSala.toUpperCase();
-    console.log(nomeSala);
+  const nomeSala = selectSala.value;
+  window.globalSala = selectSala.value;
+  nomeLocal.textContent = nomeSala.toUpperCase();
+  console.log(nomeSala);
 
-    if (imagemSala) {
-        imagemSala.src = `./imagem/${nomeSala}.svg`
-        imagemSala.classList.remove('hidden');
-        informacoesPainel.classList.remove('hidden');
+  if (imagemSala) {
+    imagemSala.src = `./imagem/${nomeSala}.svg`
+    imagemSala.classList.remove('hidden');
+    informacoesPainel.classList.remove('hidden');
 
-        scale = 1;
-        applyZoom()
+    scale = 1;
+    applyZoom()
 
-    } else {
-        imagemSala.classList.add('hidden');
-        informacoesPainel.classList.add('hidden');
-    }
-    
-    const diaSelecionado = diaDaSemanaSelect.value;
-    if (diaSelecionado && diaSelecionado !== 'Dia') {
-      // Se já tem dia, carrega os dados de novo
-      carregarDados().then((dados) => {
-        if (dados[globalSala] && dados[globalSala][diaSelecionado]) {
-          adicionarInformacaoDaSala(dados[globalSala], diaSelecionado);
-        } else {
-          ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
-        }
-      }).catch((err) => {
-        console.error('Erro ao carregar dados:', err);
-        ulLista.innerHTML = '<li>Erro ao carregar dados</li>';
-      });
-    }
+  } else {
+    imagemSala.classList.add('hidden');
+    informacoesPainel.classList.add('hidden');
+  }
+
+  const diaSelecionado = diaDaSemanaSelect.value;
+  if (diaSelecionado && diaSelecionado !== 'Dia') {
+    // Se já tem dia, carrega os dados de novo
+    carregarDados().then((dados) => {
+      if (dados[globalSala] && dados[globalSala][diaSelecionado]) {
+        adicionarInformacaoDaSala(dados[globalSala], diaSelecionado);
+      } else {
+        ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
+      }
+    }).catch((err) => {
+      console.error('Erro ao carregar dados:', err);
+      ulLista.innerHTML = '<li>Erro ao carregar dados</li>';
+    });
+  }
 })
 
 fullscreenBtn.addEventListener('click', () => {
@@ -82,30 +82,55 @@ document.addEventListener('fullscreenchange', () => {
 function applyZoom() {
   const planta = document.querySelector('.planta');
   const sala = document.querySelector('.sala');
-  
+
   planta.style.transform = `translate(-50%, -50%) rotate(180deg) scale(${scale})`;
-  
+
   if (!sala.classList.contains('hidden')) {
     sala.style.transform = `translate(-50%, -50%) rotate(90deg) scale(${scale})`;
   }
 }
 
 zoominBtn.addEventListener("click", () => {
-    if (scale < maxScale) {
-        scale = Math.min(scale + scaleStep, maxScale);
-        applyZoom();
-    }
+  if (scale < maxScale) {
+    scale = Math.min(scale + scaleStep, maxScale);
+    applyZoom();
+  }
 });
 
 zoomoutBtn.addEventListener("click", () => {
-    if (scale > minScale) {
-        scale = Math.max(scale - scaleStep, minScale);
-        applyZoom();
-    }
+  if (scale > minScale) {
+    scale = Math.max(scale - scaleStep, minScale);
+    applyZoom();
+  }
 });
 
 wrapper.addEventListener("dblclick", () => {
-    scale = 1;
-    applyZoom();
+  scale = 1;
+  applyZoom();
 });
 
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    let termo = searchInput.value.trim().toLowerCase();
+
+    // Normaliza entrada: transforma "sala 1" em "sala1"
+    termo = termo.replace(/\s+/g, '');
+    // Procura se o valor digitado existe entre as opções do select
+    let encontrou = false;
+    for (let option of selectSala.options) {
+      if (option.value.toLowerCase() === termo) {
+        selectSala.value = option.value;
+        selectSala.dispatchEvent(new Event("change")); // Dispara evento para carregar a imagem
+        encontrou = true;
+        break;
+      }
+    }
+
+    if (!encontrou) {
+      imagemSala.classList.add("hidden");
+      informacoesPainel.classList.add("hidden");
+      nomeLocal.textContent = "";
+      alert("Local não encontrado");
+    }
+  }
+});
