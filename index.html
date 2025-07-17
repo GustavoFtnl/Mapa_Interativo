@@ -17,12 +17,12 @@
       <option value="sala2">Sala 2</option>
       <option value="sala3">Sala 3</option>
       <option value="sala4">Sala 4</option>
-      <option value="">Sala 5</option>
-      <option value="">Sala 6</option>
-      <option value="">Sala 7</option>
-      <option value="">Sala 8</option>
-      <option value="">Sala 9</option>
-      <option value="">Sala 10</option>
+      <option value="sala5">Sala 5</option>
+      <option value="sala6">Sala 6</option>
+      <option value="sala7">Sala 7</option>
+      <option value="sala8">Sala 8</option>
+      <option value="sala9">Sala 9</option>
+      <option value="sala10">Sala 10</option>
     </select>
     <div class="search-bar">
       <input id="searchInput" type="text" placeholder="Buscar local..." />
@@ -54,6 +54,18 @@
       <div class="mock-map">
         <img src="./imagem/PlantaV3.svg" class="planta">
         <img src="" class="sala hidden">
+        <div class="map-pins">
+          <button class="map-pin" data-sala="sala1" aria-label="Informações da Sala 1"></button>
+          <button class="map-pin" data-sala="sala2" aria-label="Informações da Sala 2"></button>
+          <button class="map-pin" data-sala="sala3" aria-label="Informações da Sala 3"></button>
+          <button class="map-pin" data-sala="sala4" aria-label="Informações da Sala 4"></button>
+          <button class="map-pin" data-sala="sala5" aria-label="Informações da Sala 5"></button>
+          <button class="map-pin" data-sala="sala6" aria-label="Informações da Sala 6"></button>
+          <button class="map-pin" data-sala="sala7" aria-label="Informações da Sala 7"></button>
+          <button class="map-pin" data-sala="sala8" aria-label="Informações da Sala 8"></button>
+          <button class="map-pin" data-sala="sala9" aria-label="Informações da Sala 9"></button>
+          <button class="map-pin" data-sala="sala10" aria-label="Informações da Sala 10"></button>
+        </div>
       </div>
       <div class="map-controls">
         <button id="zoominBtn">+</button>
@@ -61,8 +73,8 @@
       </div>
     </section>
   </main>
-  <script src="script.js"></script>
   <script src="scriptSala.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
