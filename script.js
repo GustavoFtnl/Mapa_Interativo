@@ -7,6 +7,7 @@ const wrapper = document.querySelector('.mock-map');
 const zoominBtn = document.getElementById('zoominBtn');
 const zoomouBtn = document.getElementById('zoomoutBtn');
 const nomeLocal = document.getElementById('nomeLocal');
+const pinsContainer = document.querySelector('.map-pins');
 
 const minScale = 0.8;
 let scale = 1;
@@ -15,38 +16,7 @@ const maxScale = 2.5;
 
 window.globalSala = '';
 selectSala.addEventListener('change', () => {
-  const nomeSala = selectSala.value;
-  window.globalSala = selectSala.value;
-  nomeLocal.textContent = nomeSala.toUpperCase();
-  console.log(nomeSala);
-
-  if (imagemSala) {
-    imagemSala.src = `./imagem/${nomeSala}.svg`
-    imagemSala.classList.remove('hidden');
-    informacoesPainel.classList.remove('hidden');
-
-    scale = 1;
-    applyZoom()
-
-  } else {
-    imagemSala.classList.add('hidden');
-    informacoesPainel.classList.add('hidden');
-  }
-
-  const diaSelecionado = diaDaSemanaSelect.value;
-  if (diaSelecionado && diaSelecionado !== 'Dia') {
-    // Se já tem dia, carrega os dados de novo
-    carregarDados().then((dados) => {
-      if (dados[globalSala] && dados[globalSala][diaSelecionado]) {
-        adicionarInformacaoDaSala(dados[globalSala], diaSelecionado);
-      } else {
-        ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
-      }
-    }).catch((err) => {
-      console.error('Erro ao carregar dados:', err);
-      ulLista.innerHTML = '<li>Erro ao carregar dados</li>';
-    });
-  }
+  selecionarSala(selectSala.value);
 })
 
 fullscreenBtn.addEventListener('click', () => {
@@ -82,11 +52,24 @@ document.addEventListener('fullscreenchange', () => {
 function applyZoom() {
   const planta = document.querySelector('.planta');
   const sala = document.querySelector('.sala');
-
+  pinsContainer.style.transform = `scale(${scale})`;
   planta.style.transform = `translate(-50%, -50%) rotate(180deg) scale(${scale})`;
 
   if (!sala.classList.contains('hidden')) {
-    sala.style.transform = `translate(-50%, -50%) rotate(90deg) scale(${scale})`;
+    // Pega o ID da sala que está selecionada no momento
+    const idDaSala = selectSala.value;
+
+    // Extrai o número do ID da sala (ex: "sala5" -> 5)
+    const numeroDaSala = parseInt(idDaSala.replace('sala', ''));
+
+    let rotacao = 90; // Rotação padrão para as salas 1 a 4
+    // isso devido às imagens estarem deitadas para o outro lado
+    if (numeroDaSala > 4) {
+      rotacao = -90; // Nova rotação para as salas 5 a 10
+    }
+
+    // Aplica a rotação que foi decidida pela lógica acima
+    sala.style.transform = `translate(-50%, -50%) rotate(${rotacao}deg) scale(${scale})`;
   }
 }
 
@@ -125,12 +108,67 @@ searchInput.addEventListener("keydown", (event) => {
         break;
       }
     }
-
-    if (!encontrou) {
+    if (encontrou) {
+      selecionarSala(option.value);
+    } else {
       imagemSala.classList.add("hidden");
       informacoesPainel.classList.add("hidden");
       nomeLocal.textContent = "";
       alert("Local não encontrado");
     }
+
+  }
+});
+
+function selecionarSala(idDaSala) {
+  console.log("1. Sala selecionada:", idDaSala); // LOG 1
+  if (!idDaSala) return;
+
+  // 1. Atualiza o valor do select (para manter a consistência)
+  selectSala.value = idDaSala;
+
+  // 2. Atualiza o painel de informações
+  nomeLocal.textContent = idDaSala.toUpperCase();
+  informacoesPainel.classList.remove('hidden');
+
+  // 3. Mostra a imagem da sala
+  imagemSala.src = `./imagem/${idDaSala}.svg`;
+  imagemSala.classList.remove('hidden');
+
+  selectSala.value = idDaSala;
+  nomeLocal.textContent = idDaSala.toUpperCase();
+  informacoesPainel.classList.remove('hidden');
+  imagemSala.src = `./imagem/${idDaSala}.svg`;
+  imagemSala.classList.remove('hidden');
+
+  // 4. Dispara a lógica de carregamento de horários do scriptSala.js
+  // (Esta é a forma correta de comunicar entre os scripts)
+  if (typeof exibirInformacoes === 'function') {
+    const diaSelecionado = diaDaSemanaSelect.value;
+    exibirInformacoes(idDaSala, diaSelecionado);
+  } else {
+    // Se a função não existir, podemos forçar o evento de change do select de dia
+    diaDaSemanaSelect.dispatchEvent(new Event("change"));
+  }
+  // Ela vai "conversar" com o scriptSala.js e pedir para ele mostrar as infos.
+  if (typeof exibirInformacoesDaSala === 'function') {
+    console.log("2. Função 'exibirInformacoesDaSala' encontrada. Chamando..."); // LOG 2
+    exibirInformacoesDaSala(idDaSala);
+  }
+  else {
+    // Este erro aparecerá se a ordem dos scripts estiver errada!
+    console.error("ERRO CRÍTICO: A função 'exibirInformacoesDaSala' do scriptSala.js não foi encontrada!");
+  }
+  // 5. Reseta o zoom
+  scale = 1;
+  applyZoom();
+}
+
+
+pinsContainer.addEventListener('click', (event) => {
+  // Verifica se o que foi clicado foi um pino
+  if (event.target.classList.contains('map-pin')) {
+    const idDaSala = event.target.dataset.sala;
+    selecionarSala(idDaSala);
   }
 });
