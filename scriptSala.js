@@ -1,71 +1,79 @@
 const diaDaSemanaSelect = document.getElementById('diasDaSemana');
 const ulLista = document.getElementById('listaDeInformacoes');
 
-let dados = []
-diaDaSemanaSelect.addEventListener('change', async () => {
+let dadosSalas = {}; // Variável para guardar TODOS os dados do JSON
+let salaAtual = '';  // Variável para saber qual sala está selecionada
 
-    try {
-        dados = await carregarDados(); // Aguarda a resolução da Promise
-        const diaDaSemana = diaDaSemanaSelect.value;
-
-        // Verifica se existem aulas para esse dia
-        if (dados[globalSala] && dados[globalSala][diaDaSemana]) {
-            console.log(dados[globalSala][diaDaSemana]); // Agora mostra os dados corretamente
-            adicionarInformacaoDaSala(dados[globalSala], diaDaSemana);
-        } else {
-            console.log("Nenhuma aula para este dia");
-            ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
-        }
-    } catch (error) {
-        console.error("Erro ao carregar dados:", error);
-    }
-})
-
-async function carregarDados() {
+/**
+ * 1. Carrega os dados do arquivo JSON uma única vez.
+ * Isso acontece assim que a página termina de carregar.
+ */
+async function inicializarDados() {
     try {
         const response = await fetch('./dados.json');
         if (!response.ok) {
-            throw new Error('Erro ao buscar o arquivo')
+            throw new Error('Erro de rede ao buscar o arquivo dados.json');
         }
-        const json = await response.json()
-        return json
+        dadosSalas = await response.json();
+        console.log("Dados carregados e prontos para uso!", dadosSalas);
     } catch (error) {
-        console.error('Erro ao carregar o arquivo:', error);
-        return null;
+        console.error('Falha crítica ao carregar dados:', error);
+        ulLista.innerHTML = '<li class="error-message">Não foi possível carregar as informações das salas.</li>';
     }
 }
 
-function adicionarInformacaoDaSala(sala, diaDaSemana) {
-    ulLista.innerHTML = '';
+/**
+ * 2. Função central para mostrar as informações na tela.
+ * Ela será chamada pelo script.js sempre que uma sala for selecionada.
+ */
+function exibirInformacoesDaSala(idDaSala) {
+    console.log("3. Função 'exibirInformacoesDaSala' recebeu o ID:", idDaSala); // LOG 3
+    salaAtual = idDaSala; // Atualiza a sala que estamos vendo
+    const diaDaSemana = diaDaSemanaSelect.value;
+    console.log("4. Dia da semana atual:", diaDaSemana); // LOG 4
 
-    const aulas = sala[diaDaSemana];
+    ulLista.innerHTML = ''; // Limpa a lista anterior
 
-    if (!sala.length == null || sala.length === 0) {
-        ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
+    // Se não houver dados, sala ou dia válido, não faz nada
+    if (!dadosSalas[salaAtual] || !diaDaSemana || diaDaSemana === 'Dia') {
         return;
     }
 
+    const aulas = dadosSalas[salaAtual][diaDaSemana];
+
+    // Verifica se existe o array de aulas e se ele não está vazio
     if (!aulas || aulas.length === 0) {
-        ulLista.innerHTML = '<li>Nenhuma aula agendada</li>';
+        ulLista.innerHTML = '<li>Nenhuma aula agendada para este dia.</li>';
         return;
     }
 
+    // Cria os elementos da lista de forma mais eficiente
+    const fragment = document.createDocumentFragment();
     aulas.forEach((aula) => {
         const li = document.createElement('li');
 
-        const horario = document.createElement('h2');
-        horario.textContent = aula.horario;
-
-        const materia = document.createElement('h3');
-        materia.textContent = aula.disciplina;
-
-        const professor = document.createElement('p');
-        professor.textContent = `Professor: ${aula.professor}`;
-
-        li.appendChild(horario);
-        li.appendChild(materia);
-        li.appendChild(professor);
-
-        ulLista.appendChild(li);
+        // Usar innerHTML aqui é mais simples e seguro, pois os dados vêm do seu JSON
+        li.innerHTML = `
+            <h2>${aula.horario}</h2>
+            <h3>${aula.disciplina}</h3>
+            <p>Professor: ${aula.professor}</p>
+        `;
+        fragment.appendChild(li);
     });
+
+    ulLista.appendChild(fragment);
 }
+
+/**
+ * 3. O evento de mudança do dia da semana agora é muito mais simples.
+ * Ele apenas chama a função para re-exibir os dados da sala atual.
+ */
+diaDaSemanaSelect.addEventListener('change', () => {
+    // Se uma sala já estiver selecionada, apenas atualiza as informações
+    if (salaAtual) {
+        exibirInformacoesDaSala(salaAtual);
+    }
+});
+
+// 4. Inicia o carregamento dos dados quando o DOM estiver pronto.
+document.addEventListener('DOMContentLoaded', inicializarDados);
