@@ -62,11 +62,7 @@ function applyZoom() {
     // Extrai o número do ID da sala (ex: "sala5" -> 5)
     const numeroDaSala = parseInt(idDaSala.replace('sala', ''));
 
-    let rotacao = 90; // Rotação padrão para as salas 1 a 4
-    // isso devido às imagens estarem deitadas para o outro lado
-    if (numeroDaSala > 4) {
-      rotacao = -90; // Nova rotação para as salas 5 a 10
-    }
+    let rotacao = 90; // Rotação padrão para as salas
 
     // Aplica a rotação que foi decidida pela lógica acima
     sala.style.transform = `translate(-50%, -50%) rotate(${rotacao}deg) scale(${scale})`;
