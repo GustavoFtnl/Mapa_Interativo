@@ -1,0 +1,466 @@
+/* Estilos Gerais */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --light-color: #ecf0f1;
+  --dark-color: #2c3e50;
+  --text-color: #333;
+  --border-radius: 8px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  /* Garante que o body ocupe a altura total da viewport */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* Permite que os itens do header quebrem a linha */
+  justify-content: space-between;
+  /* Distribui os itens no header */
+}
+
+.logo {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex-grow: 1;
+  min-width: 150px;
+  /* Garante que a barra de pesquisa não fique muito pequena */
+}
+
+.search-bar input {
+  width: 98%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+}
+
+select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+
+#fullscreenBtn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  /* Evita que o texto do botão quebre */
+}
+
+/* Container Principal */
+.container {
+  display: flex;
+  flex-grow: 1;
+  /* Permite que o container principal ocupe o espaço restante */
+  /* height: calc(100vh - 60px); Removido para flex-grow */
+}
+
+/* Painel de Informações */
+.info {
+  width: 300px;
+  min-width: 280px;
+  /* Garante um tamanho mínimo para o painel de informações */
+  padding: 1rem;
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  overflow-y: auto;
+  flex-shrink: 0;
+  /* Impede que o painel de informações encolha mais que o necessário */
+}
+
+.info h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+/* Lista de Aulas */
+#listaDeInformacoes {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#listaDeInformacoes li {
+  background-color: var(--light-color);
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--secondary-color);
+  transition: transform 0.2s ease;
+}
+
+#listaDeInformacoes li:hover {
+  transform: translateX(5px);
+}
+
+#listaDeInformacoes h2 {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+}
+
+#listaDeInformacoes h3 {
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--dark-color);
+}
+
+#listaDeInformacoes p {
+  font-size: 0.8rem;
+  margin: 0;
+  color: #7f8c8d;
+}
+
+/* Mapa */
+.map {
+  flex-grow: 1;
+  /* Permite que o mapa ocupe o máximo de espaço possível */
+  position: relative;
+  background-color: #e0e0e0;
+  display: flex;
+  /* Adicionado para centralizar o mock-map */
+  justify-content: center;
+  /* Centraliza horizontalmente o mock-map */
+  align-items: center;
+  /* Centraliza verticalmente o mock-map */
+}
+
+.mock-map {
+  width: 90%;
+  height: 90%;
+  /* margin: 5%; Removido pois flexbox já centraliza */
+  background-color: white;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.planta,
+.sala {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  /* Garante que a imagem se ajuste sem cortar */
+}
+
+/* Controles de Zoom */
+.map-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+  /* Garante que os controles fiquem acima do mapa */
+}
+
+.map-controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--box-shadow);
+  transition: background-color 0.2s ease;
+}
+
+.map-controls button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Dropdown de Dias */
+#diasDaSemana {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  background-color: white;
+}
+
+/* Mensagens de estado */
+.sem-aula,
+.error-message {
+  padding: 1rem;
+  text-align: center;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.error-message {
+  color: var(--accent-color);
+}
+
+/* Efeitos de Fullscreen */
+:fullscreen .mock-map {
+  width: 95%;
+  height: 95%;
+  margin: 2.5%;
+}
+
+/* Responsividade */
+/* Para telas menores que 1024px (telas de laptop menores e tablets em paisagem) */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 99%;
+    /* Ajuste para preencher a largura */
+  }
+
+  select {
+    width: 100%;
+  }
+
+  #fullscreenBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Para telas menores que 768px (tablets em retrato e celulares) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    /* Empilha o painel de informações e o mapa */
+  }
+
+  .info {
+    width: 100%;
+    /* Ocupa toda a largura */
+    height: auto;
+    /* Altura automática para o conteúdo */
+    max-height: 50vh;
+    /* Limita a altura para que o mapa ainda seja visível */
+    order: 2;
+    /* Move o painel de informações para baixo no mobile */
+  }
+
+  .map {
+    width: 100%;
+    /* Ocupa toda a largura */
+    height: 60vh;
+    /* Define uma altura para o mapa no mobile */
+    order: 1;
+    /* Move o mapa para cima no mobile */
+  }
+
+  .mock-map {
+    width: 95%;
+    height: 95%;
+  }
+
+  .map-controls {
+    bottom: 10px;
+    right: 10px;
+    flex-direction: row;
+    /* Controles de zoom em linha para economizar espaço */
+    gap: 5px;
+  }
+
+  .map-controls button {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+/* Para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  .header {
+    padding: 0.8rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .info {
+    max-height: 40vh;
+    /* Ajuste para telas muito pequenas */
+  }
+
+  #listaDeInformacoes li {
+    padding: 0.8rem;
+  }
+}
+
+#diasDaSemana option[value="Dia"] {
+  color: #95a5a6;
+  font-style: italic;
+}
+
+#listaDeInformacoes li {
+  transition: all 0.3s ease;
+}
+
+#listaDeInformacoes li:hover {
+  background-color: #e3f2fd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+:fullscreen .header {
+  display: none;
+}
+
+:fullscreen .container {
+  height: 100vh;
+}
+
+/* Container para todos os pinos */
+.map-pins {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Isso impede que os pinos capturem o duplo clique do zoom */
+  pointer-events: none;
+  transform-origin: center;
+  /* Garante que o zoom seja a partir do meio */
+  transition: transform 0.2s ease-out;
+  /* Deixa o zoom dos pinos suave */
+}
+
+/* Estilo do Pino/Botão */
+.map-pin {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--accent-color);
+  /* Usa sua cor de destaque (vermelho) */
+  border: 2px solid white;
+  border-radius: 50% 50% 50% 0;
+  /* Forma de gota */
+  transform: rotate(-45deg) translate(-50%, -50%);
+  /* Posiciona pela ponta */
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+  /* Habilita o clique apenas nos pinos, e não no container */
+  pointer-events: all;
+}
+
+.map-pin:hover {
+  transform: rotate(-45deg) translate(-50%, -50%) scale(1.2);
+}
+
+/* Adicione isso ao seu styles.css */
+.map-pin[data-sala="sala1"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 62%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala2"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 60%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala3"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 58%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala4"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 56%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala5"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 54%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala6"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 52%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala7"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 50%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala8"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 48%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala9"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 46%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala10"] {
+  top: 40%;
+  /* Ajuste este valor */
+  left: 44%;
+  /* Ajuste este valor */
+}
