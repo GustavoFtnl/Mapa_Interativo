@@ -6,7 +6,13 @@ Projeto de um mapa interativo da UFC Campus Sobral para a Disciplina de Tecnolog
 
 Este projeto utiliza Node.js e npm para instalação e execução.
 
-### Instalar dependências
+### Entre na pasta do Backend
+
+```bash
+cd backend
+```
+
+### Instale as dependências
 
 ```bash
 npm install
@@ -15,7 +21,7 @@ npm install
 ### Importar dados (ou executar script de importação)
 
 ```bash
-node import.js
+node setup.js
 ```
 
 ### Iniciar o servidor
