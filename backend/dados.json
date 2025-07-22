@@ -1352,12 +1352,12 @@
       {
         "horario": "08:00-10:00",
         "disciplina": "Gerência e Configuração de Software",
-        "professor": "Prof. Cristiano"
+        "professor": "Prof. Evilásio da Costa Júnior"
       },
       {
         "horario": "10:00-12:00",
         "disciplina": "Gerência e Configuração de Software",
-        "professor": "Prof. Cristiano"
+        "professor": "Prof. Evilásio da Costa Júnior"
       },
       {
         "horario": "12:00-13:30",
@@ -1377,24 +1377,24 @@
       {
         "horario": "18:00-20:00",
         "disciplina": "Estágio Supervisionado I",
-        "professor": "Prof. João Erimar"
+        "professor": "Prof. João Emanuel"
       },
       {
         "horario": "20:00-22:00",
         "disciplina": "Estágio Supervisionado I",
-        "professor": "Prof. João Erimar"
+        "professor": "Prof. João Emanuel"
       }
     ],
     "sexta": [
       {
         "horario": "08:00-10:00",
         "disciplina": "Estágio Supervisionado II",
-        "professor": "Prof. João Erimar"
+        "professor": "Prof. João Emanuel"
       },
       {
         "horario": "10:00-12:00",
         "disciplina": "Estágio Supervisionado II",
-        "professor": "Prof. João Erimar"
+        "professor": "Prof. João Emanuel"
       },
       {
         "horario": "12:00-13:30",
@@ -1404,12 +1404,12 @@
       {
         "horario": "13:30-15:30",
         "disciplina": "Gerência e Configuração de Software",
-        "professor": "Prof. João Erimar"
+        "professor": "Prof. Evilásio da Costa Júnior"
       },
       {
         "horario": "15:30-17:30",
         "disciplina": "Estágio Supervisionado",
-        "professor": "Prof. João Erimar"
+        "professor": "Prof. João Emanuel"
       },
       {
         "horario": "18:00-20:00",
