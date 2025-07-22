@@ -394,73 +394,176 @@ select {
   transform: rotate(-45deg) translate(-50%, -50%) scale(1.2);
 }
 
-/* Adicione isso ao seu styles.css */
 .map-pin[data-sala="sala1"] {
-  top: 40%;
-  /* Ajuste este valor */
-  left: 62%;
-  /* Ajuste este valor */
+  top: 38%;
+  left: 66%;
 }
 
 .map-pin[data-sala="sala2"] {
-  top: 40%;
-  /* Ajuste este valor */
-  left: 60%;
-  /* Ajuste este valor */
+  top: 38%;
+  left: 63%;
 }
 
 .map-pin[data-sala="sala3"] {
-  top: 40%;
-  /* Ajuste este valor */
-  left: 58%;
-  /* Ajuste este valor */
+  top: 38%;
+  left: 60%;
 }
 
 .map-pin[data-sala="sala4"] {
-  top: 40%;
-  /* Ajuste este valor */
-  left: 56%;
+  top: 38%;
+  left: 57%;
   /* Ajuste este valor */
 }
 
 .map-pin[data-sala="sala5"] {
-  top: 40%;
+  top: 38%;
   /* Ajuste este valor */
   left: 54%;
   /* Ajuste este valor */
 }
 
 .map-pin[data-sala="sala6"] {
-  top: 40%;
+  top: 38%;
   /* Ajuste este valor */
   left: 52%;
   /* Ajuste este valor */
 }
 
 .map-pin[data-sala="sala7"] {
-  top: 40%;
+  top: 38%;
   /* Ajuste este valor */
-  left: 50%;
+  left: 49%;
   /* Ajuste este valor */
 }
 
 .map-pin[data-sala="sala8"] {
-  top: 40%;
-  /* Ajuste este valor */
-  left: 48%;
-  /* Ajuste este valor */
-}
-
-.map-pin[data-sala="sala9"] {
-  top: 40%;
+  top: 38%;
   /* Ajuste este valor */
   left: 46%;
   /* Ajuste este valor */
 }
 
-.map-pin[data-sala="sala10"] {
-  top: 40%;
+.map-pin[data-sala="sala9"] {
+  top: 38%;
   /* Ajuste este valor */
   left: 44%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="sala10"] {
+  top: 38%;
+  /* Ajuste este valor */
+  left: 41%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="auditorio"] {
+  top: 55%;
+  /* Ajuste este valor */
+  left: 37%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="banheirosLabs"] {
+  top: 52%;
+  /* Ajuste este valor */
+  left: 43%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="banheirosSalasDeAula"] {
+  top: 48%;
+  /* Ajuste este valor */
+  left: 43%;
+  /* Ajuste este valor */
+}
+.map-pin[data-sala="coordenacaoEngenharias"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 64%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="coordenacaoMusica"] {
+  top: 51%;
+  /* Ajuste este valor */
+  left: 56%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="fisicaExperimental"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 46%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="labControle"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 51%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="labEletronicaAnalogica"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 56%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="labEletronicaDigital"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 44%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="labInformatica"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 53%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="labProgramacao"] {
+  top: 51%;
+  /* Ajuste este valor */
+  left: 46%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="labSimulacoesNumericas"] {
+  top: 51%;
+  /* Ajuste este valor */
+  left: 50%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="salaNUCLIC"] {
+  top: 51%;
+  /* Ajuste este valor */
+  left: 54%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="salaPetComputacao"] {
+  top: 58%;
+  /* Ajuste este valor */
+  left: 41%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="salaPetEletrica"] {
+  top: 50%;
+  /* Ajuste este valor */
+  left: 64%;
+  /* Ajuste este valor */
+}
+
+.map-pin[data-sala="salaReunioes"] {
+  top: 50%;
+  /* Ajuste este valor */
+  left: 62%;
   /* Ajuste este valor */
 }
