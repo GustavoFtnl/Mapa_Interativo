@@ -10,7 +10,9 @@ const nomeLocal = document.getElementById('nomeLocal');
 const pinsContainer = document.querySelector('.map-pins');
 const diaDaSemanaSelect = document.getElementById('diasDaSemana');
 const ulLista = document.getElementById('listaDeInformacoes');
-
+const searchInput = document.getElementById('searchInput');
+const planta = document.querySelector('.planta');
+const sala = document.querySelector('.sala');
 let dadosSalas = {};
 let salaAtual = '';
 
@@ -93,8 +95,6 @@ function selecionarSala(idDaSala) {
 }
 
 function applyZoom() {
-  const planta = document.querySelector('.planta');
-  const sala = document.querySelector('.sala');
   pinsContainer.style.transform = `scale(${scale})`;
   planta.style.transform = `translate(-50%, -50%) rotate(180deg) scale(${scale})`;
 
@@ -124,15 +124,17 @@ wrapper.addEventListener("dblclick", () => {
 
 fullscreenBtn.addEventListener('click', () => {
   if (!document.fullscreenElement) {
-    map.requestFullscreen().then(() => scale = 1.2);
+    map.requestFullscreen();
   } else {
-    document.exitFullscreen().then(() => scale = 1);
+    document.exitFullscreen();
   }
-  applyZoom();
 });
 
 document.addEventListener('fullscreenchange', () => {
-  if (!document.fullscreenElement) {
+  if (document.fullscreenElement) {
+    scale = 1.2;
+    applyZoom();
+  } else {
     scale = 1;
     applyZoom();
   }
@@ -152,6 +154,29 @@ pinsContainer.addEventListener('click', (event) => {
   if (event.target.classList.contains('map-pin')) {
     const idDaSala = event.target.dataset.sala;
     selecionarSala(idDaSala);
+  }
+});
+
+
+searchInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    const termoNormalizado = searchInput.value.toLowerCase().replace(/\s+/g, '');
+    let encontrou = false;
+
+    if (termoNormalizado === '') return; // 
+
+    for (let option of selectSala.options) {
+      const textoOpcaoNormalizado = option.textContent.toLowerCase().replace(/\s+/g, '');
+      
+      if (textoOpcaoNormalizado.includes(termoNormalizado)) {
+        selecionarSala(option.value);
+        encontrou = true;
+        break;
+      }
+    }
+    if (!encontrou) {
+      alert("Local não encontrado!");
+    }
   }
 });
 
