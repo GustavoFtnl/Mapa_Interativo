@@ -95,5 +95,1333 @@
         "professor": "Cibelly Azevedo"
       }
     ]
+  },
+  "sala2": {
+    "segunda": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Álgebra Linear",
+        "professor": "Prof. Antônio Josefran"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Cálculo Diferencial e Integral II",
+        "professor": "Prof. Rui Vigelis"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Introdução à Engenharia",
+        "professor": "Prof. Iális Cavalcante"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Matemática Discreta para Computação",
+        "professor": "Prof. Ricardo Pires"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Introdução à Matemática",
+        "professor": "Prof.a Thaisa Badagnan"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Introdução à Matemática",
+        "professor": "Prof.a Thaisa Badagnan"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Probabilidade e Estatística",
+        "professor": "Prof. Francisco Rafael"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Física Geral II",
+        "professor": "Prof. Luis Eduardo"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral I",
+        "professor": "Prof. Luis Eduardo"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Cálculo Diferencial e Integral I",
+        "professor": "Prof. Ricardo Pires"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Introdução à Administração",
+        "professor": "Prof. Lineker Passos"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Introdução à Administração",
+        "professor": "Prof. Lineker Passos"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Álgebra Linear",
+        "professor": "Prof. Antônio Josefran"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Cálculo Diferencial e Integral II",
+        "professor": "Prof. Rui Vigelis"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Introdução à Engenharia",
+        "professor": "Prof. Iális Cavalcante"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Matemática Discreta para Computação",
+        "professor": "Prof. Ricardo Pires"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Contabilidade Geral e Econômica da Sociedade",
+        "professor": "Prof.a Sabrina Marques"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Contabilidade Geral e Econômica da Sociedade",
+        "professor": "Prof.a Sabrina Marques"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Probabilidade e Estatística",
+        "professor": "Prof. Francisco Rafael"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Física Geral II",
+        "professor": "Prof. Luis Eduardo"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral I",
+        "professor": "Prof. Luis Eduardo"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Cálculo Diferencial e Integral I",
+        "professor": "Prof. Ricardo Pires"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Fundamentos das Ciências Sociais",
+        "professor": "Prof.s Salvelina e Valder"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Fundamentos das Ciências Sociais",
+        "professor": "Prof.s Salvelina e Valder"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Programação Computacional para Engenharia",
+        "professor": "Prof. Fernando Rodrigues"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Programação Computacional para Engenharia",
+        "professor": "Prof. Fernando Rodrigues"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Introdução à Economia",
+        "professor": "Prof. Fernando Mayorga"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Introdução à Economia",
+        "professor": "Prof. Fernando Mayorga"
+      }
+    ],
+    "sabado": []
+  },
+  "sala3": {
+    "segunda": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Cálculo Diferencial e Integral III",
+        "professor": "Prof. Juan Medeiros"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Construção e Análise de Algoritmos",
+        "professor": "Prof. Antônio Josefran"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Sistemas de Comunicações via Rádio",
+        "professor": "Prof. Tarcísio Victor"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "História do Pensamento Econômico",
+        "professor": "Prof. Carlos Viana"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "História do Pensamento Econômico",
+        "professor": "Prof. Carlos Viana"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Sistemas Operacionais",
+        "professor": "Prof. Erick Aguiar"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Máquinas Elétricas",
+        "professor": "Prof.a Vanessa Siqueira"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Instrumentação Industrial",
+        "professor": "Prof. Ícaro Bezerra"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Econometria I",
+        "professor": "Prof.a Marta Andriola"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Econometria I",
+        "professor": "Prof.a Marta Andriola"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Cálculo Diferencial e Integral III",
+        "professor": "Prof. Juan Medeiros"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Construção e Análise de Algoritmos",
+        "professor": "Prof. Antônio Josefran"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Máquinas Elétricas",
+        "professor": "Prof.a Vanessa Siqueira"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Sistemas de Comunicações via Rádio",
+        "professor": "Prof. Tarcísio Victor"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Introdução à Clínica da Atividade",
+        "professor": "Prof. Pablo Husca"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Introdução à Clínica da Atividade",
+        "professor": "Prof. Pablo Husca"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Produção de Energia Elétrica",
+        "professor": "Prof. Eber Diniz"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Sistemas Operacionais",
+        "professor": "Prof. Erick Aguiar"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Fundamentos de Redes",
+        "professor": "Prof. Nilena Brito"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Microeconomia II",
+        "professor": "Prof.a Georgyana Silveira"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Microeconomia II",
+        "professor": "Prof.a Georgyana Silveira"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Produção de Energia Elétrica",
+        "professor": "Prof. Eber Diniz"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Libras",
+        "professor": "Prof. A DEFINIR"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Libras",
+        "professor": "Prof. A DEFINIR"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Libras",
+        "professor": "Prof. A DEFINIR"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Libras",
+        "professor": "Prof. A DEFINIR"
+      }
+    ],
+    "sabado": []
+  },
+  "sala4": {
+    "segunda": [
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral III",
+        "professor": "Prof. Euclimar Pains"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Variáveis Complexas",
+        "professor": "Prof. Juan Medeiros"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia do Desenvolvimento",
+        "professor": "Prof.a Lilian Ribeiro"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia do Desenvolvimento",
+        "professor": "Prof.a Lilian Ribeiro"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Higiene Industrial e Segurança no Trabalho",
+        "professor": "Prof.a Cibelly Azevedo"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Engenharia Econômica",
+        "professor": "Prof. Francisco Gean"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Física Geral III",
+        "professor": "Prof. Euclimar Pains"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia Brasileira Contemporânea",
+        "professor": "Prof. Carlos Viana"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia Brasileira Contemporânea",
+        "professor": "Prof. Carlos Viana"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Fundamentos de Economia",
+        "professor": "Prof.a Claycianne Almeida"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Fundamentos de Economia",
+        "professor": "Prof.a Claycianne Almeida"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral III",
+        "professor": "Prof. Euclimar Pains"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Variáveis Complexas",
+        "professor": "Prof. Juan Medeiros"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia Pública",
+        "professor": "Prof.a Débora Feitosa"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia Pública",
+        "professor": "Prof.a Débora Feitosa"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Fundamentos de Economia",
+        "professor": "Prof.a Nilena Dias"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Engenharia Econômica",
+        "professor": "Prof. Francisco Gean"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Comunicação e Expressão",
+        "professor": "Prof.a Eveline Andrade"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Comunicação e Expressão",
+        "professor": "Prof.a Eveline Andrade"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia Agrícola e do Meio Ambiente",
+        "professor": "Prof. Fernando Mayorga"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia Agrícola e do Meio Ambiente",
+        "professor": "Prof. Fernando Mayorga"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Higiene Industrial e Segurança no Trabalho",
+        "professor": "Prof.a Cibelly Azevedo"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia e Direito",
+        "professor": "Prof.a Salvelina Lourenço"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia e Direito",
+        "professor": "Prof.a Salvelina Lourenço"
+      }
+    ],
+    "sabado": []
+  },
+  "sala5": {
+    "segunda": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Séries e Equações Diferenciais",
+        "professor": "Prof.a Nivia"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Monitoria de Física e Cálculo",
+        "professor": "Aluno: Nathan"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral III",
+        "professor": "Prof. Francisco Gean"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Álgebra Linear",
+        "professor": "Prof.a Nova"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "História Econômica do Brasil",
+        "professor": "Prof. Jadson Alves"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "História Econômica do Brasil",
+        "professor": "Prof. Jadson Alves"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Séries e Equações Diferenciais",
+        "professor": "Prof.a Nova"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Tópicos Especiais em Computação I",
+        "professor": "Prof. Carlos Alexandre"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral I",
+        "professor": "Prof. Francisco Gean"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Proteção de Sistemas Elétricos de Potência",
+        "professor": "Prof. Juan Carlos Suni"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Econometria II",
+        "professor": "Prof. Weligton Gomes"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Econometria II",
+        "professor": "Prof. Weligton Gomes"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Software em Tempo Real",
+        "professor": "Prof. Evilásio da Costa Júnior"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Paradigmas de Linguagem de Programação",
+        "professor": "Prof. Evilásio da Costa Júnior"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Instalações Elétricas Industriais",
+        "professor": "Prof. Eber Diniz"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Álgebra Linear",
+        "professor": "Prof. Nova"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Engenharia Econômica e Financeira",
+        "professor": "Prof.s Guaracyara e Weligton"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Engenharia Econômica e Financeira",
+        "professor": "Prof.s Guaracyara e Weligton"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Séries e Equações Diferenciais",
+        "professor": "Prof.a Nova"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Tópicos Especiais em Telecomunicações I",
+        "professor": "Prof. Carlos Alexandre"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral I",
+        "professor": "Prof. Francisco Gean"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Proteção de Sistemas Elétricos de Potência",
+        "professor": "Prof. Juan Carlos Suni"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Microeconomia III",
+        "professor": "Prof.a Alessandra Benevides"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Microeconomia III",
+        "professor": "Prof.a Alessandra Benevides"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Software em Tempo Real",
+        "professor": "Prof. Evilásio da Costa Júnior"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Paradigmas de Linguagem de Programação",
+        "professor": "Prof. Evilásio da Costa Júnior"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Instalações Elétricas Industriais",
+        "professor": "Prof. Eber Diniz"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Macroeconomia I",
+        "professor": "Prof.a Alessandra Benevides"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Macroeconomia I",
+        "professor": "Prof.a Alessandra Benevides"
+      }
+    ],
+    "sabado": []
+  },
+  "sala6": {
+    "segunda": [
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Economia Matemática I",
+        "professor": "Prof.a Daniele dos Santos"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Economia Matemática I",
+        "professor": "Prof.a Daniele dos Santos"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Mercado de Capitais",
+        "professor": "Prof.a Daniele dos Santos"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Mercado de Capitais",
+        "professor": "Prof.a Daniele dos Santos"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Elementos de Fenômenos de Transporte",
+        "professor": "Profa. Rosana Saboya"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Eletrônica Digital",
+        "professor": "Prof. Danilo Fernandes"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Engenharia dos Materiais",
+        "professor": "Prof. Washington Queiroz"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Engenharia dos Materiais",
+        "professor": "Prof. Washington Queiroz"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Projetos",
+        "professor": "Prof.a Andrina Márcia"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Projetos",
+        "professor": "Prof.a Andrina Márcia"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Banco de Dados",
+        "professor": "Prof. Fernando Rodrigues"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Circuitos Elétricos I",
+        "professor": "Prof. Isaac Machado"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Microprocessadores",
+        "professor": "Prof. Marcelo Marques"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Materiais, Equipamentos e Instalações Elétricas",
+        "professor": "Prof. Eber Diniz"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Séries Temporais",
+        "professor": "Prof. Silvando Oliveira"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Séries Temporais",
+        "professor": "Prof. Silvando Oliveira"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Elementos de Fenômenos de Transporte",
+        "professor": "Profa. Rosana Saboya"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Eletrônica Digital",
+        "professor": "Prof. Danilo Fernandes"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Engenharia dos Materiais",
+        "professor": "Prof. Washington Queiroz"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Mecânica dos Materiais",
+        "professor": "Prof. Washington Queiroz"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Finanças Corporativas I",
+        "professor": "Prof.a Débora Feitosa"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Finanças Corporativas I",
+        "professor": "Prof.a Débora Feitosa"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Banco de Dados",
+        "professor": "Prof. Fernando Rodrigues"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Circuitos Elétricos I",
+        "professor": "Prof. Isaac Machado"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Microprocessadores",
+        "professor": "Prof. Marcelo Marques"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Materiais, Equipamentos e Instalações Elétricas",
+        "professor": "Prof. Eber Diniz"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Microeconomia II",
+        "professor": "Prof. Lineker Passos"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Microeconomia II",
+        "professor": "Prof. Lineker Passos"
+      }
+    ],
+    "sabado": []
+  },
+  "sala7": {
+    "segunda": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Física Geral II",
+        "professor": "Prof. Euclimar Pains"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Álgebra Linear",
+        "professor": "Prof. Juan Medeiros"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Introdução à Engenharia",
+        "professor": "Prof. Márcio Amaro"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Física Geral I",
+        "professor": "Prof. Euclimar Silva"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia Matemática II",
+        "professor": "Prof.a Guaracyara Campelo"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia Matemática II",
+        "professor": "Prof.a Guaracyara Campelo"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Cálculo Diferencial e Integral III",
+        "professor": "Prof. José Claudio"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Probabilidade e Estatística",
+        "professor": "Prof.a Nivia"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Cálculo Diferencial e Integral I",
+        "professor": "Prof. Ricardo Pires"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Química Geral",
+        "professor": "Prof. Rosana Saboya"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Estatística Econômica II",
+        "professor": "Prof. Silvando Oliveira"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Estatística Econômica II",
+        "professor": "Prof. Silvando Oliveira"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Física Geral II",
+        "professor": "Prof. Euclimar Silva"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Álgebra Linear",
+        "professor": "Prof. Juan Medeiros"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Introdução à Engenharia",
+        "professor": "Prof. Márcio Amaro"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Física Geral I",
+        "professor": "Prof. Euclimar Silva"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia e Administração",
+        "professor": "Prof.a Márcia Rodrigues"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia e Administração",
+        "professor": "Prof.a Márcia Rodrigues"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Cálculo Diferencial e Integral III",
+        "professor": "Prof. José Claudio"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Probabilidade e Estatística",
+        "professor": "Prof.a Nivia"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Cálculo Diferencial e Integral I",
+        "professor": "Prof. Ricardo Pires"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Química Geral",
+        "professor": "Prof. Rosana Saboya"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Contabilidade Nacional",
+        "professor": "Prof.a Kívia Mesquita"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Contabilidade Nacional",
+        "professor": "Prof.a Kívia Mesquita"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Desenho para Engenharia",
+        "professor": "Prof. Nilena Brito"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Desenho para Engenharia",
+        "professor": "Prof. Nilena Brito"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Programação Computacional para Engenharia",
+        "professor": "Prof. Erick Dourado"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Programação Computacional para Engenharia",
+        "professor": "Prof. Erick Dourado"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia e Sociedade",
+        "professor": "Prof.s Fábio Pinho, Valder e Alexandra"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia e Sociedade",
+        "professor": "Prof.s Fábio Pinho, Valder e Alexandra"
+      }
+    ],
+    "sabado": []
+  },
+  "sala8": {
+    "segunda": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Conversão Eletromecânica de Energia",
+        "professor": "Prof. Márcio Amaro"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Eletrônica de Potência",
+        "professor": "Prof. Marcus Rogério"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia do Nordeste",
+        "professor": "Prof.a Marta Andriana"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia do Nordeste",
+        "professor": "Prof.a Marta Andriana"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Redes de Computadores",
+        "professor": "Prof. Wendley"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Geração, Transmissão e Distribuição de Energia Elétrica",
+        "professor": "Prof. Juan Carlos Suni"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Tecnologias Web II",
+        "professor": "Prof. Thiago Iachiley"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Circuitos Elétricos II",
+        "professor": "Prof. Erasmo de Castro"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia Internacional",
+        "professor": "Prof.a Lilian Ribeiro"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia Internacional",
+        "professor": "Prof.a Lilian Ribeiro"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Conversão Eletromecânica de Energia",
+        "professor": "Prof. Márcio Amaro"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Eletrônica de Potência",
+        "professor": "Prof. Marcus Rogério"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Eletrônica Analógica",
+        "professor": "Prof. André Lima"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Economia da Saúde",
+        "professor": "Prof.a Kívia Helane"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Economia da Saúde",
+        "professor": "Prof.a Kívia Helane"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Redes de Computadores",
+        "professor": "Prof. Wendley"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Geração, Transmissão e Distribuição de Energia Elétrica",
+        "professor": "Prof. Juan Carlos Suni"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Tecnologias Web II",
+        "professor": "Prof. Thiago Iachiley"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Circuitos Elétricos II",
+        "professor": "Prof. Erasmo de Castro"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Tópicos do Mercado de Capitais",
+        "professor": "Prof. Maciel Castro"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Tópicos do Mercado Financeiro",
+        "professor": "Prof. Maciel Castro"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Eletrônica Analógica",
+        "professor": "Prof. André Lima"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Investimentos II",
+        "professor": "Prof. Maciel Castro"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Investimentos II",
+        "professor": "Prof. Maciel Castro"
+      }
+    ],
+    "sabado": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Harmonia I",
+        "professor": "Prof. João Álvaro"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Harmonia I",
+        "professor": "Prof. João Álvaro"
+      }
+    ]
+  },
+  "sala9": {
+    "segunda": [
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral III",
+        "professor": "Prof. Luis Eduardo"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Controle de Sistemas Dinâmicos",
+        "professor": "Prof. Ícaro Bezerra"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Sistemas de Comunicações I",
+        "professor": "Prof. Francisco Rafael"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Sistemas Lineares",
+        "professor": "Prof. Carlos Alexandre"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Séries e Equações Diferenciais",
+        "professor": "Prof. Rui Vigelis"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Fundamentos da Educação",
+        "professor": "Prof. Eveline Andrade"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Engenharia Ambiental",
+        "professor": "Prof. Washington Queiroz"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Engenharia Ambiental",
+        "professor": "Prof. Washington Queiroz"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Física Geral III",
+        "professor": "Prof. Luis Eduardo"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Engenharia de Software",
+        "professor": "Prof. Danilo"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Fundamentos da Educação",
+        "professor": "Prof. Eveline Andrade"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Didática",
+        "professor": "Prof. Eveline Andrade"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Controle de Sistemas Dinâmicos",
+        "professor": "Prof. Ícaro Bezerra"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Sistemas de Comunicações I",
+        "professor": "Prof. Francisco Rafael"
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Sistemas Lineares",
+        "professor": "Prof. Carlos Alexandre"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Seminário de Telecomunicações I",
+        "professor": "Prof. Marcelo Marques"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Didática",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Didática",
+        "professor": "Prof. João Erimar"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Engenharia de Software",
+        "professor": "Prof. Danilo"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Educação Musical Brasileira",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Cultura e Antropologia Cultural",
+        "professor": "Prof. Fernando Souza"
+      }
+    ],
+    "sabado": []
+  },
+  "sala10": {
+    "segunda": [
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Instrumentação, Medidas e Instalações Elétricas",
+        "professor": "Prof. Adson Bezerra"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Linguagem e Estruturação Musical I",
+        "professor": "Prof. Álvaro Lemos"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Linguagem e Estruturação Musical II / Solfejo III",
+        "professor": "Prof. Álvaro Lemos"
+      }
+    ],
+    "terca": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Ciência, Tecnologia e Sociedade",
+        "professor": "Profa. Tália Silvino"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Biblioteca do Campus de Sobral",
+        "professor": ""
+      },
+      {
+        "horario": "12:00-13:30",
+        "disciplina": "Biblioteca do Campus de Sobral",
+        "professor": ""
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Computação Gráfica",
+        "professor": "Prof. Iális Cavalcante"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Sistemas Embarcados",
+        "professor": "Profa. Jermana Lopes"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Linguagem e Estruturação Musical II",
+        "professor": "Prof. Álvaro Lemos"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Linguagem e Estruturação Musical IV",
+        "professor": "Prof. Álvaro Lemos"
+      }
+    ],
+    "quarta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Ciência, Tecnologia e Sociedade",
+        "professor": "Prof. Cristiano"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Engenharia de Software e Biocenose",
+        "professor": "Prof. Cristiano"
+      },
+      {
+        "horario": "12:00-13:30",
+        "disciplina": "Biblioteca do Campus de Sobral",
+        "professor": ""
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Desenho para Engenharia",
+        "professor": "Prof. Nilena Brito"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Desenho para Engenharia",
+        "professor": "Prof. Nilena Brito"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Linguagem e Estruturação Musical I / Solfejo I",
+        "professor": "Prof. João Erimar"
+      }
+    ],
+    "quinta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Gerência e Configuração de Software",
+        "professor": "Prof. Cristiano"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Gerência e Configuração de Software",
+        "professor": "Prof. Cristiano"
+      },
+      {
+        "horario": "12:00-13:30",
+        "disciplina": "Biblioteca do Campus de Sobral",
+        "professor": ""
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Computação Gráfica",
+        "professor": "Prof. Iális Cavalcante"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Sistemas Embarcados",
+        "professor": "Profa. Jermana Lopes"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Estágio Supervisionado I",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Estágio Supervisionado I",
+        "professor": "Prof. João Erimar"
+      }
+    ],
+    "sexta": [
+      {
+        "horario": "08:00-10:00",
+        "disciplina": "Estágio Supervisionado II",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "10:00-12:00",
+        "disciplina": "Estágio Supervisionado II",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "12:00-13:30",
+        "disciplina": "Biblioteca do Campus de Sobral",
+        "professor": ""
+      },
+      {
+        "horario": "13:30-15:30",
+        "disciplina": "Gerência e Configuração de Software",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "15:30-17:30",
+        "disciplina": "Estágio Supervisionado",
+        "professor": "Prof. João Erimar"
+      },
+      {
+        "horario": "18:00-20:00",
+        "disciplina": "Linguagem e Estruturação Musical III",
+        "professor": "Prof. Álvaro Lemos"
+      },
+      {
+        "horario": "20:00-22:00",
+        "disciplina": "Linguagem e Estruturação Musical II",
+        "professor": "Prof. Álvaro Lemos"
+      }
+    ],
+    "sabado": []
   }
 }
