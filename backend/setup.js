@@ -3,7 +3,6 @@ const fs = require('fs');
 
 async function main() {
   const dados = JSON.parse(fs.readFileSync('dados.json', 'utf-8'));
-  const salaNome = 'sala1';
 
   const connection = await mysql.createConnection({
     host: 'localhost',
@@ -68,15 +67,6 @@ async function main() {
   }
   console.log('Tabelas criadas ou já existentes.');
 
-  const [salaExistente] = await db.query('SELECT id FROM salas WHERE nome = ?', [salaNome]);
-  let id_sala;
-  if (salaExistente.length > 0) {
-    id_sala = salaExistente[0].id;
-  } else {
-    const [resultSala] = await db.query('INSERT INTO salas (nome) VALUES (?)', [salaNome]);
-    id_sala = resultSala.insertId;
-  }
-
   async function getOrCreateId(table, nome) {
     const [rows] = await db.query(`SELECT id FROM ${table} WHERE nome = ?`, [nome]);
     if (rows.length > 0) return rows[0].id;
@@ -91,18 +81,32 @@ async function main() {
     return result.insertId;
   }
 
-  for (const [dia_semana, aulas] of Object.entries(dados[salaNome])) {
-    for (const aula of aulas) {
-      const [hora_inicio, hora_fim] = aula.horario.split('-');
-      const id_horario = await getOrCreateHorario(hora_inicio, hora_fim);
-      const id_disciplina = await getOrCreateId('disciplinas', aula.disciplina);
-      const id_professor = await getOrCreateId('professores', aula.professor);
 
-      await db.query(
-        `INSERT INTO aulas (id_sala, id_disciplina, id_professor, id_horario, dia_semana)
-         VALUES (?, ?, ?, ?, ?)`,
-        [id_sala, id_disciplina, id_professor, id_horario, dia_semana]
-      );
+  for (const salaNome in dados) {
+    console.log(`Processando dados para: ${salaNome}`);
+
+    const [salaExistente] = await db.query('SELECT id FROM salas WHERE nome = ?', [salaNome]);
+    let id_sala;
+    if (salaExistente.length > 0) {
+      id_sala = salaExistente[0].id;
+    } else {
+      const [resultSala] = await db.query('INSERT INTO salas (nome) VALUES (?)', [salaNome]);
+      id_sala = resultSala.insertId;
+    }
+
+    for (const [dia_semana, aulas] of Object.entries(dados[salaNome])) {
+      for (const aula of aulas) {
+        const [hora_inicio, hora_fim] = aula.horario.split('-');
+        const id_horario = await getOrCreateHorario(hora_inicio, hora_fim);
+        const id_disciplina = await getOrCreateId('disciplinas', aula.disciplina);
+        const id_professor = await getOrCreateId('professores', aula.professor);
+
+        await db.query(
+          `INSERT INTO aulas (id_sala, id_disciplina, id_professor, id_horario, dia_semana)
+           VALUES (?, ?, ?, ?, ?)`,
+          [id_sala, id_disciplina, id_professor, id_horario, dia_semana]
+        );
+      }
     }
   }
 
